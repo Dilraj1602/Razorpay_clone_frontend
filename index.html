@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        .corefeaturesection{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+        .companylist{
+            animation: 5s infinite linear moveimage;
+        }
+
+        .example-class {
+            max-width: calc(100% - 500px);
+        }
+
+
+        @keyframes moveimage {
+            0%{
+                top:0;
+            }
+            100%{
+                top:-50%;
+            }
+        }
+    </style>
+
     <title>Document</title>
 </head>    
 <body>
@@ -827,7 +853,7 @@
                     <div class=" relative border flex flex-col space-y-4 py-10 pl-10  rounded-md  hover:scale-105  hover:cursor-pointer transition-all duration-200 group">
 
                         <img src="images/upi-autopay-bg.svg" alt="" 
-                        class="absolute z-10  -top-1 right-0 group-hover:hidden" >
+                        class="absolute z-10  top-0 -left-0 group-hover:hidden" >
                         <img src="images/upi-autopay-hoverbg.svg" alt="" 
                         class="absolute z-10  -top-4 right-0 hidden group-hover:block" >
                          <img src="images/autopay-icon.svg" alt=""
@@ -853,11 +879,11 @@
 
                      <div class=" relative border flex flex-col space-y-4 py-10 pl-10  rounded-md  hover:scale-105  hover:cursor-pointer transition-all duration-200 group">
 
-                        <img src="images/payment-buttons-icon.svg" alt="" 
-                        class="absolute z-10  -top-1 right-0 group-hover:hidden" >
                         <img src="images/payment-button-bg.svg" alt="" 
+                        class="absolute z-10  -top-1 left-0-0 group-hover:hidden" >
+                        <img src="images/payment-button-hoverbg.svg" alt="" 
                         class="absolute z-10  -top-4 right-0 hidden group-hover:block" >
-                         <img src="images/payment-button-hoverbg.svg" alt=""
+                         <img src="images/payment-buttons-icon.svg" alt=""
                          class="bg-lightBlue500  w-10 h-10 rounded-full ">
                         <h3 class="font-mullish font-bold  text-black select-none">Payment Button</h3>
                         <p class="font-mullish text-black opacity-70 select-none">Accept payment on your website in
@@ -881,11 +907,11 @@
 
                      <div class=" relative border flex flex-col space-y-4 py-10 pl-10  rounded-md  hover:scale-105  hover:cursor-pointer transition-all duration-200 group">
 
-                        <img src="images/upi-autopay-bg.svg" alt="" 
-                        class="absolute z-10  -top-1 right-0 group-hover:hidden" >
-                        <img src="images/upi-autopay-hoverbg.svg" alt="" 
+                        <img src="images/instant-settlement-bg.svg" alt="" 
+                        class="absolute z-10  -top-1 left-0 group-hover:hidden" >
+                        <img src="images/instant-settlement-bghover.svg" alt="" 
                         class="absolute z-10  -top-4 right-0 hidden group-hover:block" >
-                         <img src="images/" alt=""
+                         <img src="images/qr-mc-code.aec73db1.svg" alt=""
                          class="bg-lightBlue500  w-10 h-10 rounded-full ">
                         <h3 class="font-mullish font-bold  text-black select-none">QR Codes</h3>
                         <p class="font-mullish text-black opacity-70 select-none">Create unlimited QR codes with
@@ -910,7 +936,7 @@
                      <div class=" relative border flex flex-col space-y-4 py-10 pl-10  rounded-md  hover:scale-105  hover:cursor-pointer transition-all duration-200 group">
 
                         <img src="images/magic-checkout-bg.svg" alt="" 
-                        class="absolute z-10  -top-1 right-0 group-hover:hidden" >
+                        class="absolute z-10  -top-1 left-0 group-hover:hidden" >
                         <img src="images/magic-checkout-hoverbg.svg" alt="" 
                         class="absolute z-10  -top-4 right-0 hidden group-hover:block" >
                          <img src="images/magic-checkout.svg" alt=""
@@ -945,7 +971,7 @@
 
     <section 
     class=" bg-[url(./images/core-features-sectionBg.svg)] bg-no-repeat
-    bg-cover pt-[10rem] pb-[150px] mt-14 relative ">
+    bg-cover mt-14 relative  corefeaturesection relative">
           
             <div class="w-10/12 max-w-[1080px] mx-auto mt-20 ">
 
@@ -1019,14 +1045,16 @@
                          </div>
                 </div>
             </div>
+
+            <div class="absolute -bottom-50 w-full h-[500px] -z-30 bg-[#f5f8fe]"></div>
           
     </section>
 
-    <section class="mt-10 ">
+    <section class="relative bg-[#f5f8fe]">
 
-        <div class="w-10/12 max-w-[1080px] max-h-[700px] mx-auto flex flex-row justify-between">
+        <div class="w-10/12 max-w-[1080px] max-h-[700px] mx-auto flex flex-row ">
             <!-- left-section -->
-            <div class="flex flex-col justify-center space-y-7">
+            <div class="flex flex-col justify-center space-y-7 example-class">
 
                <div class="space-y-2">
                 <h1 class="font-mullish font-extrabold text-black text-2xl">Join the 50,00,000 businesses using Razorpay</h1>
@@ -1054,8 +1082,17 @@
 
             <!-- right-section -->
 
-            <div>
-                <img src="images/comanies.png" alt="">
+            <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <div
+                  style="background: linear-gradient(180deg, #f4f8ff ,#fff0) " 
+                  class="absolute w-full h-[150px] top-0 z-50"></div>
+
+                <img src="images/comanies.png" alt=""
+                class="absolute h-auto object-cover companylist">
+
+                <div
+                style="background: linear-gradient(0deg, #f4f8ff ,#fff0) " 
+                class="absolute w-full h-[150px] bottom-0 z-50"></div>
             </div>
 
         </div>
