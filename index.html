@@ -7,19 +7,35 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
+        .footer-heading h3{
+            font-family: mullish;
+            font-weight: 900;
+            /* color: #818597; */
+            opacity: 0.7;
+        }
+
+        .footer-heading li{
+            user-select: none;
+        }
+        
+        .footer-heading li:hover{
+            cursor: pointer;
+            color: black;
+        }
+
         .corefeaturesection{
             background-size: 100% 100%;
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+
+        .ctasection{
+            background-size: 100% 70%;
+        }
+
         .companylist{
-            animation: 5s infinite linear moveimage;
+            animation: 10s infinite linear moveimage;
         }
-
-        .example-class {
-            max-width: calc(100% - 500px);
-        }
-
 
         @keyframes moveimage {
             0%{
@@ -29,6 +45,16 @@
                 top:-50%;
             }
         }
+
+        .example-class {
+            max-width: calc(100% - 500px);
+        }
+        .footer{
+            background: linear-gradient(to right, #eef9fe, #edf7ff);
+            margin: -600px 0px 0px;
+            padding: 220px 0px 24px;
+        };
+
     </style>
 
     <title>Document</title>
@@ -971,7 +997,7 @@
 
     <section 
     class=" bg-[url(./images/core-features-sectionBg.svg)] bg-no-repeat
-    bg-cover mt-14 relative  corefeaturesection relative">
+    bg-cover mt-14 relative  corefeaturesection ">
           
             <div class="w-10/12 max-w-[1080px] mx-auto mt-20 ">
 
@@ -1098,6 +1124,386 @@
         </div>
 
     </section>
+
+    <section class="relative">
+  
+        <div class="relative w-10/12 max-w-[1300px] mx-auto py-20
+        ">
+
+            <img src="images/feature-section1-dottedrows.png" alt=""
+            class="absolute w-[200px]  top-[8rem] left-[2rem] -z-10">
+            <h2 class="font-mullish font-bold text-deepBlueHead text-2xl text-center">An Experience <br>
+                People Love to Talk About</h2>
+            <div class="w-6 h-1 mx-auto bg-greenLight my-4"></div>
+
+        
+
+        <!-- left-button -->
+        <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff] rounded-full left-0 top-1/2 flex justify-center
+        items-center"> 
+
+            <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+            mix-blend-multiply">
+                <i data-feather="chevron-right" 
+                class="stroke-[5px] w-6 h-6 md:w-10 md:h-10
+                text-gray-400 rotate-180"></i>
+            </div>
+
+        </button>
+
+         <!-- right-button -->
+
+         <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff] rounded-full right-0 top-1/2 flex justify-center
+         items-center"> 
+ 
+             <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+             mix-blend-multiply">
+                 <i data-feather="chevron-right" 
+                 class="stroke-[5px] w-6 h-6 md:w-10 md:h-10
+                 text-gray-400 "></i>
+             </div>
+ 
+         </button>
+
+         <!-- main-part -->
+
+        <div class="flex flex-row max-w-[960px] items-center mx-auto
+           
+        space-x-[10rem] my-20">
+
+            <!-- left-part -->
+             
+            <img src="images/saurav.png" alt="" loading="lazy" class="h-[320px] w-[320px]
+            rounded-xl">
+             
+
+             <!-- right-part -->
+
+             <div class="flex flex-col max-w-[400px] space-y-1">
+                <img src="images/quotes.svg" alt="" class="w-[35px] h-[40px]">
+                <p class="font-mullish font-extralight text-3xl">Improved The Bottom Line <br> With Cash-Like Collection</p>
+                <a href="" class="text-grayText italic underline">Learn More</a>
+                <h3 class="font-mullish font-extrabold text-2xl">Saurav Goyal</h3>
+                <p class="font-mullish font-medium">Chief finance Officer</p>
+                <img src="images/moneyview.cc7bb2cc.png" alt="" width="80px" height="40px">
+             </div>
+
+        </div>
+
+         <!-- dot-part -->
+          <div class="flex flex-row space-x-2 mx-auto justify-center">
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"> </div>
+            <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full"> </div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"> </div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"> </div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"> </div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"> </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section
+    class="bg-[url(./images/CTABg\.svg)] bg-no-repeat
+    bg-cover h-full w-full relative ctasection pt-[16rem] pb-[500px]">
+
+
+        <div class="w-10/12 max-w-[1080px] mx-auto flex flex-row pl-4 space-x-20">
+
+            <!-- left-part -->
+
+            <div class="flex flex-col space-y-7">
+
+                <div>
+                    <h3 class="text-white font-extrabold font-mullish text-2xl">
+                        Supercharge your business with Razorpay</h3>
+                    <div class="w-6 h-1 bg-greenLight mt-4"></div>
+                </div>
+
+                <p class="text-white font-mullish">Sign up now to experience the future of payments and offer <br>
+                     your customers the best checkout experience.</p>
+                <ul class="flex flex-row space-x-4">
+                    <li class="font-mullish flex items-center space-x-4">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span class="text-lightGray">Quick onboarding</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-4">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span class="text-lightGray">Access to entire product suite</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-4">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span class="text-lightGray">API access</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-4">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span class="text-lightGray">24x7 support</span>
+                    </li>
+                    
+                </ul>
+    
+                <button class="bg-white rounded-md hover:text-lightBlue500  px-[14px] py-[4px]
+                text-lightBlue font-bold font-mullish transition-all duration-200  w-[160px] h-[50px]">
+            Sign Up Now </button>
+    
+            </div>
+        <!-- right-part -->
+         <img src="images/ctaImg.svg" alt="" width="220px" height="80px">
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="w-10/12 max-w-[1080px] mx-auto relative">
+
+            <div class="grid grid-cols-4 space-x-10 py-10 ">
+
+                <!-- section-1 -->
+                <div class="space-y-4">
+                    <img src="images/razorpay_logo.svg" alt="" class="h-[25px] ">
+                    <p>Razorpay is the only payments solution in India that allows businesses to accept,
+                         process and disburse payments with its product suite. It gives you access to all 
+                         payment modes including credit card, debit card, netbanking, UPI and popular wallets 
+                         including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
+                    <p>RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
+                    <p>Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p>
+                    <p>Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered current account is provided by our partner banks i.e, ICICI, RBL, Yes bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p>
+
+                    <div class="flex flex-wrap space-x-2 space-y-2">
+                        <img src="images/pci.png" alt="" class="w-[100px] h-[100px]">
+                        <img src="images/iso.png" alt="" class="w-[100px] h-[100px]">
+                        <img src="images/aicpa.png" alt="" class="w-[100px] h-[100px]">
+                    </div>
+                </div>
+
+                <!-- sectin-2 -->
+                <div class="footer-heading space-y-4">
+                    
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>BANKING PLUS</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">RazorpayX</li>
+                            <li class="text-lightBlue">Source to Pay</li>
+                            <li class="text-lightBlue">Current Account</li>
+                            <li class="text-lightBlue">payouts</li>
+                            <li class="text-lightBlue">payouts links</li>
+                            <li class="text-lightBlue">Corporate Credit Card</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>LENDING</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Razorpay Capital</li>
+                            <li class="text-lightBlue">Instant Settlements</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>BECOME PARTNER</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Refer and earn</li>
+                            <li class="text-lightBlue">Onboarding APIs</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>MORE</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Route</li>
+                            <li class="text-lightBlue">Invoices</li>
+                            <li class="text-lightBlue">Freelencer Payments</li>
+                            <li class="text-lightBlue">International</li>
+                            <li class="text-lightBlue">Flash Checkout</li>
+                            <li class="text-lightBlue">UPIs</li>
+                            <li class="text-lightBlue">ePOS</li>
+                            <li class="text-lightBlue">Checkout Demo</li>
+                            <li class="text-lightBlue">RazorpayX Payroll</li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- section-3 -->
+                 <div class="footer-heading space-y-4">
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>ACCEPT PAYMENTS</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Payment Gateway</li>
+                            <li class="text-lightBlue">Payments Pages</li>
+                            <li class="text-lightBlue">Payments Links</li>
+                            <li class="text-lightBlue">Razorpay POS <span class="bg-green-500 text-white text-sm rounded-md p-1">NEW</span></li>
+                            <li class="text-lightBlue">Flash Checkout</li>
+                            <li class="text-lightBlue">UPIs</li>
+                            <li class="text-lightBlue">ePOS</li>
+                            <li class="text-lightBlue">Checkout Demo</li>
+                            <li class="text-lightBlue">RazorpayX Payroll</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>DEVELOPERS</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Docs</li>
+                            <li class="text-lightBlue">Integration</li>
+                            <li class="text-lightBlue">API References</li>
+                        </ul>
+
+                    </div>
+
+                    
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>RESOURCES</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">BLOGS</li>
+                            <li class="text-lightBlue">Customers Stories</li>
+                            <li class="text-lightBlue">Events</li>
+                            <li class="text-lightBlue">Chargeback Guides </li>
+                            <li class="text-lightBlue">Settlements Guides</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>SOLUTIONS</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Education</li>
+                            <li class="text-lightBlue">E-Commerce</li>
+                            <li class="text-lightBlue">Saas</li>
+                            <li class="text-lightBlue">BFSI</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>FREE TOOLS</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">GST Calculator</li>
+                            <li class="text-lightBlue">Online TDS Payment</li>
+                            <li class="text-lightBlue">GST Number Search</li>
+                            <li class="text-lightBlue">GST Search By PAN</li>
+                            <li class="text-lightBlue">ROI Calculator <span class="bg-green-500 text-white text-sm rounded-md p-1">NEW</span></li>
+                            <li class="text-lightBlue">CAGR Calculator <span class="bg-green-500 text-white text-sm rounded-md p-1">NEW</span></li>
+                            <li class="text-lightBlue">EBITDA Calculator <span class="bg-green-500 text-white text-sm rounded-md p-1">NEW</span></li>
+
+                            
+                        </ul>
+
+                    </div>
+
+                 </div>
+
+                 <!-- section-4 -->
+
+                 <div class="footer-heading space-y-4">
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>COMPANY</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">About Us</li>
+                            <li class="text-lightBlue">Careers</li>
+                            <li class="text-lightBlue">Terms Of Use</li>
+                            <li class="text-lightBlue">Privacy Policy</li>
+                            <li class="text-lightBlue">Grievance Redrsaal</li>
+                            <li class="text-lightBlue">Responsible Disclouser</li>
+                            <li class="text-lightBlue">Partners</li>
+                            <li class="text-lightBlue">White Papers</li>
+                            <li class="text-lightBlue">Corporate Information</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>HELP & SUPPORT</h3>
+
+                        <ul class="flex flex-col space-y-1">
+                            <li class="text-lightBlue">Suppoer</li>
+                            <li class="text-lightBlue">Knowledge Base</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+
+                        <h3>FIND US ONLINE</h3>
+
+                        <ul class="flex flex-row space-x-3">
+
+                            <a href="#"><img src="images/facebook-icon.svg" alt="" class="w-6 h-6"></a>
+                            <a href="#"><img src="images/twitter-icon.svg" alt="" class="w-6 h-6"></a>
+                            <a href="#"><img src="images/instagram-icon.svg" alt="" class="w-6 h-6"></a>
+                            <a href="#"><img src="images/github-icon.svg" alt="" class="w-6 h-6"></a>
+                            <a href="#"><img src="images/linkedin-icon.svg" alt="" class="w-6 h-6"></a>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-2 pt-4">
+
+                        <h3>REGD. OFFICE ADDRESS</h3>
+                        <p>Razorpay Software Private Limited,
+                            1st Floor, SJR Cyber,
+                            22 Laskar Hosur Road, Adugodi,
+                            Bengaluru, 560030,
+                            Karnataka, India
+                            CIN: U72200KA2013PTC097389</p>
+
+                    </div>
+
+                    <div class="flex flex-col">
+                        <p>© Razorpay 2024 <br>
+
+                            All Rights Reserved</p>
+                    </div>
+                    
+
+                 </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+   
+    
+    
 
     <script>
         feather.replace();
